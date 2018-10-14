@@ -4,9 +4,8 @@
 
 # PYTHON KERNEL INSTALL
 conda create -n py27 python=2 ipykernel
-source activate ipykernel_py2
-python -m ipykernel install --user
 conda activate py27
+python -m ipykernel install --user
 conda deactivate
 echo "Python 2 kernel -- DONE"
 
