@@ -39,4 +39,6 @@ sudo apt-get update
 sudo apt-get install docker-ce
 
 
-#INTALL
+#INTALL SDKMAN
+bash sdkman.sh
+source "$HOME/.sdkman/bin/sdkman-init.sh"

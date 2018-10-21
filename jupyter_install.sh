@@ -18,8 +18,8 @@ echo "Python 2 kernel -- DONE"
 #sudo apt-get install sbt -y
 #cd jupyter-scala
 #sbt cli/packArchive
-
-
+#
+#
 #git clone https://github.com/alexarchambault/jupyter-scala.git
 #cd jupyter-scala
 #sbt cli/packArchive
@@ -27,8 +27,8 @@ echo "Python 2 kernel -- DONE"
 ## unpack cli/target/jupyter-scala_2.11.6-0.2.0-SNAPSHOT.zip
 #cd cli/target/jupyter-scala_2.11.6-0.2.0-SNAPSHOT/bin
 #./jupyter-scala
-
-
+#
+#
 #cd ..
 #rm -rf jupyter-scala
 #echo "Scala kernel -- DONE"
