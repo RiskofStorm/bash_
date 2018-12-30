@@ -10,8 +10,38 @@
   # Note: setting fileSystems is generally not
   # necessary, since nixos-generate-config figures them out
   # automatically in hardware-configuration.nix.
-  #fileSystems."/".device = "/dev/disk/by-label/nixos";
+  # fileSystems."/".device = "/dev/disk/by-label/nixos";
+  
+  # GUI- XFCE
+  services.xserver = {
+    enable = true;
+    desktopManager = {
+      default = "xfce";
+      xterm.enable = false;
+      xfce.enable = true;
+    };
+  };
 
-  # Enable the OpenSSH server.
+  
+  # VIDEO DRIVERS
+  # services.xserver.videoDrivers = [ "ati_unfree" ];
+  # services.xserver.videoDrivers = [ "nvidia" ];
+  
+  # TOUCHPAD
+  # services.xserver.libinput.enable = true;
+  
+  # SOFT
+  environment.systemPackages =
+  [ pkgs.thunderbird
+    pkgs.firefox
+	
+  ];
+  
+  # NET WIFI SSH UPDATES
+  # networking.networkmanager.enable = true;
+  networking.wireless.enable = true;
+  
   services.sshd.enable = true;
+  system.autoUpgrade.enable = true;
+  
 }
