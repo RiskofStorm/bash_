@@ -8,19 +8,6 @@ apt-get install git -y
 snap install --classic heroku -y
 
 
-# INSTALL GOOGLE DRIVE
-add-apt-repository ppa:alessandro-strada/ppa
-apt update
-apt install google-drive-ocamlfuse -y
-
-cd $HOME
-mkdir ~/google-drive
-
-google-drive-ocamlfuse ~/google-drive/
-# unmount
-# fusermount -u ~/google-drive
-
-
 # INSTALL DOCKER
 
 apt-get install \

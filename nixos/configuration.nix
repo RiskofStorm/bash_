@@ -24,8 +24,8 @@
 
   
   # VIDEO DRIVERS
-  # services.xserver.videoDrivers = [ "ati_unfree" ];
-  # services.xserver.videoDrivers = [ "nvidia" ];
+  # services.xserver.videoDrivers = ["ati_unfree"];
+  # services.xserver.videoDrivers = ["nvidia"];
   
   # TOUCHPAD
   # services.xserver.libinput.enable = true;
